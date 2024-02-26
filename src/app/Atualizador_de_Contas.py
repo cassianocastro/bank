@@ -6,8 +6,8 @@ class Atualizador_contas:
         self._saldo_total = saldo_total
 
     def roda(self, conta):
-        print ("Saldo da conta: {}".format(conta.saldo))
+        print("Saldo da conta: {}".format(conta.saldo))
 
         self._saldo_total += conta.atualiza(self._selic)
 
-        print ("Saldo final: {}".format(self._saldo_total))
+        print("Saldo final: {}".format(self._saldo_total))

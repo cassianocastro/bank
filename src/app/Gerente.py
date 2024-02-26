@@ -12,9 +12,11 @@ class Gerente(Funcionario):
     def autentica(self, senha):
         if (self._senha == senha):
             print("Acesso Permitido")
+
             return True
         else:
             print("Acesso Negado")
+
             return False
 
     def get_bonificacao(self):

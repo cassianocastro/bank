@@ -10,5 +10,5 @@ class Controle_bonificacoes:
         else:
             print(
                 "Instância de {} não implementa o método get_bonificacao()."
-                .format (self.__class__.__name__)
+                .format(self.__class__.__name__)
             )

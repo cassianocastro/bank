@@ -17,7 +17,7 @@ class Conta(abc.abc):
         Conta._identificador += 1
         Conta._total_contas  += 1
 
-        print ("Conta criada com sucesso.")
+        print("Conta criada com sucesso.")
 
     @staticmethod
     def get_total_contas():
@@ -50,10 +50,11 @@ class Conta(abc.abc):
         else:
             conta_destino.deposita(valor)
             self._historico.transacoes.append("Tranferencia de {} para conta {}".format(valor, conta_destino.numero))
+
             return True
 
     def extrato(self):
-        print ("Número: {}\nSaldo: {}" .format (self._numero, self._saldo))
+        print("Número: {}\nSaldo: {}".format(self._numero, self._saldo))
 
         self._historico.transacoes.append("Tirou comprovante de Saldo - Saldo {}".format(self.saldo))
 
